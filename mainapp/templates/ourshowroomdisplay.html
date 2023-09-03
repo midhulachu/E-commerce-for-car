@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+   <style>
+        #a{height: 50px;width: 50px;}
+        #h{width: 500px;margin-left: 300px;}
+    </style>
+<script src="https://kit.fontawesome.com/db6eb46503.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<body>
+
+
+
+
+
+
+<table >
+
+
+<div  class="row">
+    {% for i,j,k,l,m in h %}
+    <div class="col-lg-3 col-md-4 col-sm-12">
+
+<div class="card" style="width: 18rem;">
+  <img height="150px" width="150px" src="{% static i %}" class="card-img-top">
+  <div class="card-body" style="background-color:wheat">
+    <h5 class="card-title">Address:{{j}}</h5>
+      <h5 class="card-title">Phone:{{k}}</h5>
+    <h5 class="card-title">Email:{{l}}</h5>
+  </div>
+
+      <a href="http://127.0.0.1:8000/mainapp/ourshowroomdelete/{{m}}"><button type="button" class="btn btn-outline-danger">Delete</button></a>
+
+</div>
+      </div>
+    {% endfor %}
+</div>
+</table>
+<center><a href="http://127.0.0.1:8000/mainapp/adminpage/"><button type="submit" class="btn btn-outline-dark">Back</button></a></center>
+
+
+
+
+
+</body>
+</html>

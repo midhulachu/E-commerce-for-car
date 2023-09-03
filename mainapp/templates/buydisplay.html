@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #c{background-color: rgb(254, 250, 250);margin-left: 150px;margin-top: 30px;width: 700px;height: 700px;}
+        #b{margin-left: 20px;padding-top: 20px;margin-right: 20px;}
+        tr{text-align:center;}
+        th{background-color: rgb(174, 91, 91);color: white;font-size: 20px;}
+        tr:nth-child(odd){background-color: gray;}
+        tr:nth-child(even){background-color: rgb(211, 211, 211);}
+        #a{height: 150px;width: 100%;margin-top: 100px;}
+
+
+    </style>
+    <script>
+        function myfunction(){
+        var body=document.getElementById('body').innerHTML;
+        var data=document.getElementById('data').innerHTML;
+        document.getElementById('body').innerHTML=data;
+        window.print()
+        }
+</script>
+</head>
+<body id="body">
+<div id="data">
+<center><h1>YOUR BILL</h1></center>
+    <div id="c">
+        <div id="d">
+    <h2>ROYAL CAR</h2>
+    <p>Michel jn MVK</p>
+            <p>Date:-{{a.date}}</p>
+</div>
+<div id="b">
+    <table id="a">
+        <tr>
+            <th>SL NO</th>
+            <th>ITEM DESCRIPTION</th>
+            <th>QTY</th>
+            <th>PRICE</th>
+            <th>GRAND-TOTAL</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>{{a.carname}}</td>
+            <td>1</td>
+            <td>{{a.offerprice}}RS</td>
+            <td>{{a.offerprice}}RS</td>
+        </tr>
+    </table><br><br>
+   <center><h3>Thanku for business with us</h3></center>
+</div>
+    </div>
+</div>
+<center><button type="button" class="btn btn-dark" onclick="myfunction()">Print the bill</button></center>
+</body>
+</html>

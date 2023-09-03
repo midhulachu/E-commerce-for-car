@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eec6b65c99.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <title>ROYAL CARS - Car Rental HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <script src="https://kit.fontawesome.com/db6eb46503.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link href="{% static 'multishop/img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'multishop/lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'multishop/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'multishop/css/style.css' %}" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="{% static 'frontpage/img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'frontpage/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'frontpage/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet"/>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'frontpage/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'frontpage/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-light py-3 px-lg-5 d-none d-lg-block">
+    <div class="row">
+        <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+91 8281571533</a>
+                <span class="text-body">|</span>
+                <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>midhunmuralikrk@gmail.com</a>
+            </div>
+        </div>
+        <div class="col-md-6 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-body px-3" href="https://www.facebook.com/midhun.murali.33483" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a class="text-body px-3" href="https://www.linkedin.com/in/midhun-murali-0593a7158">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="text-body px-3" href="https://www.instagram.com/midhunmuralikrk/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-body pl-3" href="https://www.youtube.com/@travelogarithambymidhun5406" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="position-relative px-lg-5" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="" class="navbar-brand">
+                <h1 class="text-uppercase text-primary mb-1"><i class="fa-solid fa-car fa-shake"
+                                                                style="color: #ffffff;"></i> Royal Cars</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                     <a href="http://127.0.0.1:8000/mainapp/userprofile/" class="nav-item nav-link">Your Profile</a>
+                    <a href=http://127.0.0.1:8000/mainapp/contact/ " class="nav-item nav-link ">Contact</a>
+                    <a href="http://127.0.0.1:8000/mainapp/ourshowroomuserdisplay/" class="nav-item nav-link">Our Showroom</a>
+                    <div>
+<!--                        <input style="margin-top:24px;" type="text" class="form-control  " id="myInput" onkeyup="myFunction()"-->
+<!--                               placeholder="Search by Car">-->
+                        <a href="http://127.0.0.1:8000/mainapp/search/" class="nav-item nav-link ">Search</a>
+                    </div>
+                    <a href="http://127.0.0.1:8000/mainapp/logoutt/" class="nav-item nav-link ">Logout</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="display-1 text-primary text-center">Hi... {{w.username}}</h1>
+        <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">Royal Cars</span>
+        </h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <img class="w-75 mb-4" src="{% static 'frontpage/img/about.png' %}" alt="">
+                <p>Royal car is india's leading used auto platform business which is organizing the market by
+                    aggregating demand and supply.It has the largest pan-india used car retailing network.large and
+                    fast-growing partnership to procure used vehicle efficiency</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About End -->
+
+
+<!-- Services Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+
+        <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-taxi text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">01</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Car Sell</h4>
+                    <p class="m-0">From inspection to payment, everything right from your doorstep!</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-taxi text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">02</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Car Buy</h4>
+                    <p class="m-0">Buy your vehicle in resonable price</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-taxi text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Car Financing</h4>
+                    <p class="m-0">24/7 online loan,Tieup with 10+ banks, Fast paper work</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-taxi text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">04</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Great Price</h4>
+                    <p class="m-0">Largest dealer network + Smart AI Pricing Engine = great deal for your car</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-taxi text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">05</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Instant Payment</h4>
+                    <p class="m-0">The amount is transferred directly to your bank account within minutes</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-2">
+                <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                             style="width: 80px; height: 80px;">
+                            <i class="fa fa-2x fa-car text-secondary"></i>
+                        </div>
+                        <h1 class="display-2 text-white mt-n2 m-0">06</h1>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Free Documentation</h4>
+                    <p class="m-0">Documentation and RC transfers can take months! We’ll handle it all</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+<!--accordation start-->
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Popular Car
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="row" style="margin-left:165px">
+                {% for i,j,k,l in c %}
+                <div class="card" style="width: 14rem; margin-right:10px;margin-bottom:10px;box-shadow:5px 5px 5px">
+                    <img src="{% static i %}" height="150px" width="150px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{j}}</h5>
+                        <p class="card-text">{{k}}</p>
+                        <p class="card-text">{{l}}</p>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Just Launched
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="row" style="margin-left:165px">
+                {% for i,j,k,l,m in a %}
+                <div class="card" style="width: 14rem; margin-right:10px;margin-bottom:10px;box-shadow:5px 5px 5px">
+                    <img src="{% static i %}"  height="150px" width="150px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{j}}</h5>
+                        <p class="card-text">{{k}}</p>
+                        <p class="card-text">{{l}}</p>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--accodation end-->
+
+
+<!-- carstock Start -->
+
+<div class="container-fluid pt-5 pb-3">
+
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span
+            class=" pr-3">Cars In Stock</span></h2>
+
+    <div class="row px-xl-5">
+{% for i,j,k,l,m,n in e %}
+
+        <div class="col-lg-2 col-md-4 col-sm-6 pb-1">
+            <div class="product-item bg-light mb-4">
+                <div class="product-img position-relative overflow-hidden">
+                    <img  src="{% static i %}" height="150px" width="220px" >
+                    <div class="product-action">
+<!--                        <a class="btn btn-outline-dark btn-square" href="http://127.0.0.1:8000/mainapp/buy/{{n}}"><i-->
+<!--                                class="fa fa-shopping-cart"></i></a>-->
+                        <a class="btn btn-outline-dark btn-square" href="http://127.0.0.1:8000/mainapp/wish/{{n}}"><i class="far fa-heart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href="http://127.0.0.1:8000/mainapp/detailview/{{n}}"><i class="fa-solid fa-circle-info"></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+<!--                    <a class="h6 text-decoration-none text-truncate" href="">{{j}}</a>-->
+                         <h5>{{j}}</h5>
+                    <div class="d-flex align-items-center justify-content-center mt-2">
+                        <h4>{{l}}</h4>
+                        <h6 class="text-muted ml-2">
+                            <del>{{k}}</del>
+                        </h6>
+                    </div>
+                    <h6>{{m}}</h6>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+                        <small class="fa fa-star text-primary mr-1"></small>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+         {% endfor %}
+    </div>
+    </div>
+
+
+<!-- Products End -->
+
+
+<!--         upcoming car Start-->
+<div class="container-fluid pt-5">
+    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class=" pr-3">Upcoming cars</span></h2>
+    <div class="row px-xl-5 pb-3">
+        {% for i,j,k,l,m in b %}
+        <div class="col-lg-2 col-md-4 col-sm-6 pb-1">
+                <div class="cat-item img-zoom d-flex align-items-center mb-4">
+                    <div class="overflow-hidden" style="width: 200px; height: 100px;">
+                        <img  src="{% static i %}" height="120px" width="120px" alt="">
+                    </div>
+                    <div class="flex-fill pl-3">
+                        <h6>{{j}}</h6>
+                        <p class="text-body">{{k}}</p>
+                    </div>
+                </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- popular End -->
+
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+            <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Mavelikara alapuzha </p>
+            <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+91 8281571533</p>
+            <p><i class="fa fa-envelope text-white mr-3"></i>midhunmuralikrk@gmail.com</p>
+            <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-lg btn-dark btn-lg-square mr-2"
+                   href="https://www.youtube.com/@travelogarithambymidhun5406"><i
+                        class="fab fa-youtube"></i></a>
+                <a class="btn btn-lg btn-dark btn-lg-square mr-2"
+                   href="https://www.facebook.com/midhun.murali.33483"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-dark btn-lg-square mr-2"
+                   href="https://www.linkedin.com/in/midhun-murali-0593a7158"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-dark btn-lg-square"
+                   href="https://www.instagram.com/midhunmuralikrk/"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-body mb-2" href="http://127.0.0.1:8000/mainapp/advertise/"><i
+                        class="fa fa-angle-right text-white mr-2"></i>Advertise</a>
+                <a class="text-body mb-2" href="http://127.0.0.1:8000/mainapp/terms/"><i
+                        class="fa fa-angle-right text-white mr-2"></i>Term & Conditions</a>
+                <a class="text-body mb-2" href="http://127.0.0.1:8000/mainapp/registeruser/"><i
+                        class="fa fa-angle-right text-white mr-2"></i>New Member Registration</a>
+                                <a class="text-body mb-2" href="http://127.0.0.1:8000/mainapp/happycustomerhtml/"><i
+                        class="fa fa-angle-right text-white mr-2"></i>Happy customer</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <a href="http://127.0.0.1:8000/mainapp/cargaleryuserdisplay/"><h4 class="text-uppercase text-light mb-4">Car Gallery</h4></a>
+            <div class="row mx-n1">
+                <div class="col-6 px-0 mb-1">
+                    <a href=""><img class="w-50" src="{% static 'frontpage/img/gallery-1.jpg' %}" alt=""></a>
+                </div>
+                <div class="col-6 px-0 mb-1">
+                    <a href=""><img class="w-50" src="{% static 'frontpage/img/gallery-2.jpg' %}" alt=""></a>
+                </div>
+                <div class="col-6 px-0 mb-1">
+                    <a href=""><img class="w-50" src="{% static 'frontpage/img/gallery-3.jpg' %}" alt=""></a>
+                </div>
+                <div class="col-6 px-0 mb-1">
+                    <a href=""><img class="w-50" src="{% static 'frontpage/img/gallery-4.jpg' %}" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 ">
+            <h4 class="text-uppercase text-light mb-4">Location</h4>
+            <div class="map_container">
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63008.34698956942!2d76.50180097491021!3d9.242358301777054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b061ee020787e0d%3A0xc496b728b31ffb0f!2sMavelikara%2C%20Kerala!5e0!3m2!1sen!2sin!4v1690557691773!5m2!1sen!2sin"
+                            width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'frontpage/lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'frontpage/lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'frontpage/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'frontpage/lib/tempusdominus/js/moment.min.js' %}"></script>
+<script src="{% static 'frontpage/lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+<script src="{% static 'frontpage/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'multishop/lib/easing/easing.min.js' %]"></script>
+<script src="{% static 'multishop/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+<!-- Contact Javascript File -->
+<script src="{% static 'multishop/mail/jqBootstrapValidation.min.js' %}"></script>
+<script src="{% static 'multishop/mail/contact.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static 'multishop/js/main.js' %}"></script>
+
+<!--footer end-->
+</body>
+</html>

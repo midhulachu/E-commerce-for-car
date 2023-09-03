@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center><h1>Total Purchased Items</h1></center>
+  <table>
+        {% for i in a %}
+        {% if i.uid == id %}
+        <div class="col-12">
+            <div class="card" style="width: 18rem;margin-left:620px;margin-top:30px;border-color:red;">
+                <div class="card-body">
+                    <p class="card-text">CAR NAME:{{i.carname}}</p>
+                    <p class="card-text">PRICE:{{i.price}}</p>
+                </div>
+            </div>
+        </div>
+         {% endif %}
+        {% endfor %}
+    </table>
+<a href="http://127.0.0.1:8000/mainapp/totalbuydelete/">Delete</a>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ROYAL CARS - Car Rental HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+<script src="https://kit.fontawesome.com/db6eb46503.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link href="{% static 'frontpage/img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'frontpage/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'frontpage/css/style.css' %}" rel="stylesheet">
+    <style>
+           #a{height: 230px;width: 600px;margin-top: 10px;margin-left: 20px;box-shadow: 5px 5px 5px rgb(108, 7, 7); background-color: rgb(144, 247, 144);}
+        #b{height: 230px;width: 600px;margin-top: 10px;margin-left: 20px;box-shadow: 5px 5px 5px rgb(108, 7, 7) ; background-color: rgb(144, 247, 144);}
+        #c{height: 230px;width: 600px;margin-top: 10px;margin-left: 20px;box-shadow: 5px 5px 5px rgb(108, 7, 7); background-color: rgb(144, 247, 144);}
+        #d{height: 180px;width: 300px;box-shadow: 4px 4px 4px rgb(239, 180, 71);background-color: rgb(130, 250, 130);margin-left: 20px;margin-top: 20px;}
+    </style>
+</head>
+
+<body>
+
+
+
+  <!-- Topbar Start -->
+    <div class="container-fluid bg-light py-3 px-lg-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+91 8281571533</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>midhunmuralikrk@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="https://www.facebook.com/midhun.murali.33483" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-body pl-3" href="https://www.youtube.com/@travelogarithambymidhun5406" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+ <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                   <h1 class="text-uppercase text-primary mb-1"> <i class="fa-solid fa-car fa-shake" style="color: #ffffff;"></i>   Royal Cars</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+
+            <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
+
+            <div class="row">
+                <div class="col-lg-7 mb-2">
+                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
+                        <form method="post">{% csrf_token %}
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control p-4" placeholder="Your Name" name="name" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Your Email" name="email" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" placeholder="Subject"  name="subject" required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Message" name="message" required="required"></textarea>
+                            </div>
+                            <div>
+                               <a href="http://127.0.0.1:8000/mainapp/contact/"><button class="btn btn-primary py-3 px-5" type="submit">Send Message</button></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-2">
+                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Head Office</h5>
+                                <p>Mavelikara </p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Branch Office</h5>
+                                <p> kochi</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Customer Service</h5>
+                                <p>midhunmuralikrk@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Return & Refund</h5>
+                                <p class="m-0">refund@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <div id="a">
+        <div id="d">
+                    <h4 class="text-uppercase text-light mb-4">HEAD OFFICE</h4>
+        <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Place: Mavelikara near sreekrishna Temple</p>
+        <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>Ph No: +91 828157133</p>
+        <p><i class="fa fa-envelope text-white mr-3"></i>Email: mavelikaraikrk@gmail.com</p>
+        </div>
+
+    </div>
+    <div id="b">
+        <div id="d">
+            <h4 class="text-uppercase text-light mb-4">BRANCH OFFICE</h4>
+<p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>Place: kakkanad kochi opp infopark</p>
+<p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>Ph No: +91 828151533</p>
+<p><i class="fa fa-envelope text-white mr-3"></i>Email: ernakulamkrk@gmail.com</p>
+</div>
+    </div>
+    <div id="c">
+        <div id="d">
+            <h4 class="text-uppercase text-light mb-4">All Enquiry</h4>
+
+<p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>Ph No: +91 821571533</p>
+<p><i class="fa fa-envelope text-white mr-3"></i>Email:enquirykrk@gmail.com</p>
+</div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'frontpage/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'frontpage/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'frontpage/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'frontpage/lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'frontpage/lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'frontpage/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'frontpage/js/main.js' %}"></script>
+
+</body>
+
+</html>

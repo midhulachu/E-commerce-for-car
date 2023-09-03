@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+     Font Icon
+    <link rel="stylesheet"
+          href="{% static 'userregister/fonts/material-icon/css/material-design-iconic-font.min.css' %}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'userregister/css/style.css' %}">
+    <style>
+        img{height:600px;width:500px;}
+
+    </style>
+</head>
+<body>
+
+
+<div class="main">
+    <div class="container">
+        <div class="signup-content">
+            <div class="signup-img">
+                <img src="{% static 'userregister/images/pexels-yurii-hlei-1545743.jpg' %}" alt="">
+            </div>
+            <div class="signup-form">
+                <form method="POST" enctype="multipart/form-data" class="register-form" id="register-form">{% csrf_token %}
+                    <center><h2>User registration form</h2></center>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name :</label>
+                            <input type="text" name="firstname" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name :</label>
+                            <input type="text" name="lastname"  required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>User Name :</label>
+                            <input type="text" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label>Email ID :</label>
+                            <input type="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Number :</label>
+                            <input type="number" name="number">
+                        </div>
+                        <div class="form-group">
+                            <label>Image :</label>
+                            <input type="file" name="image">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Password :</label>
+                            <input type="password" name="password">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm-Password :</label>
+                            <input type="password" name="confirmpassword">
+                        </div>
+                    </div>
+                    <div class="form-submit">
+                        <input type="submit" value="Reset" class="submit" id="reset">
+                        <input type="submit" value="Submit" class="submit" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="{% static 'userregister/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'userregister/js/main.js' %}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
